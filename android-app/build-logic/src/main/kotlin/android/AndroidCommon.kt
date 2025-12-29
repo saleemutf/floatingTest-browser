@@ -87,7 +87,7 @@ internal fun Project.androidCommon() {
     }
 
     composeOptions {
-      kotlinCompilerExtensionVersion = deps.version("compose")!!
+      kotlinCompilerExtensionVersion = "1.5.11"
     }
 
     packagingOptions {
@@ -120,6 +120,8 @@ internal fun Project.androidCommon() {
         "-Xopt-in=kotlin.time.ExperimentalTime",
         "-Xopt-in=kotlin.experimental.ExperimentalTypeInference",
         "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "-P",
+        "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
       )
     }
   }
