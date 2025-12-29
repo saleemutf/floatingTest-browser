@@ -33,6 +33,7 @@ scabbard {
 }
 
 android {
+  namespace "arun.com.chromer"
   // TODO Update play license key
   // resValue "string", "play_license_key", "$PLAY_LICENSE_KEY"
 
