@@ -54,7 +54,6 @@ gradlePlugin {
   }
 }
 
-/*
 dependencies {
   implementation(deps.gradle.dependency.updates)
   implementation(deps.agp)
@@ -65,4 +64,3 @@ dependencies {
   implementation(deps.kotlinx.binaryvalidator)
   implementation("gradle.plugin.dev.arunkumar:scabbard-gradle-plugin:0.5.0")
 }
-*/
