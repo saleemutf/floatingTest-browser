@@ -21,17 +21,11 @@ plugins {
   id "android-binary-plugin"
   id "kotlin-kapt"
   id "kotlin-parcelize"
-  id "scabbard.gradle"
 }
 
 // TODO move to build-logic
 kapt {
   correctErrorTypes = true
-}
-
-scabbard {
-  enabled false
-  outputFormat "svg"
 }
 
 android {
