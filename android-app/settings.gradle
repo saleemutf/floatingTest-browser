@@ -47,6 +47,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "lynket"
-//include ":lynket"
-//include ":disk-cache"
-include ":lynket-playground"
+include ":lynket"
+include ":disk-cache"
+//include ":lynket-playground"

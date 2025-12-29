@@ -120,8 +120,6 @@ internal fun Project.androidCommon() {
         "-Xopt-in=kotlin.time.ExperimentalTime",
         "-Xopt-in=kotlin.experimental.ExperimentalTypeInference",
         "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-        "-P",
-        "plugin:androidx.compose.compiler.plugins.kotlin:suppressKotlinVersionCompatibilityCheck=true"
       )
     }
   }
