@@ -72,7 +72,7 @@ private fun Project.configureSpotless() {
     kotlin {
       targetExclude("$buildDir/**/*.kt", "bin/**/*.kt")
 
-      ktlint(deps.version("ktlint")).userData(
+      ktlint(deps.version("ktlint")).editorConfigOverride(
         mapOf(
           "indent_size" to "2",
           "continuation_indent_size" to "2",

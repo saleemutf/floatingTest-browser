@@ -34,5 +34,5 @@ internal fun VersionCatalog.version(reference: String): String? = findVersion(re
   .orElse(null)
   ?.toString()
 
-internal fun VersionCatalog.dependency(reference: String): String? = findDependency(reference)
+internal fun VersionCatalog.dependency(reference: String): String? = findLibrary(reference)
   .orElse(null)?.toString()
