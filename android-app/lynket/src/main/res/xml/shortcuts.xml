@@ -1,0 +1,62 @@
+<!--
+  ~
+  ~  Lynket
+  ~
+  ~  Copyright (C) 2023 Arunkumar
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  This program is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+  <shortcut
+    android:enabled="true"
+    android:icon="@drawable/ic_shortcut_add"
+    android:shortcutId="new_tab"
+    android:shortcutLongLabel="@string/open_new_tab"
+    android:shortcutShortLabel="@string/open_new_tab">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="arun.com.chromer.browsing.newtab.NewTabDialogActivity"
+      android:targetPackage="arun.com.chromer" />
+    <categories android:name="android.shortcut.conversation" />
+  </shortcut>
+
+  <shortcut
+    android:enabled="true"
+    android:icon="@drawable/ic_shortcut_history"
+    android:shortcutId="history"
+    android:shortcutLongLabel="@string/title_history"
+    android:shortcutShortLabel="@string/title_history">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="arun.com.chromer.history.HistoryActivity"
+      android:targetPackage="arun.com.chromer" />
+    <categories android:name="android.shortcut.conversation" />
+  </shortcut>
+
+  <shortcut
+    android:enabled="true"
+    android:icon="@drawable/ic_shortcut_tabs"
+    android:shortcutId="tabs"
+    android:shortcutLongLabel="@string/title_tabs"
+    android:shortcutShortLabel="@string/title_tabs">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="arun.com.chromer.tabs.ui.TabsActivity"
+      android:targetPackage="arun.com.chromer" />
+    <categories android:name="android.shortcut.conversation" />
+  </shortcut>
+  <!-- Specify more shortcuts here. -->
+</shortcuts>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~  Lynket
+  ~
+  ~  Copyright (C) 2023 Arunkumar
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  This program is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+        <string name="changelog_text"><![CDATA[
+<html>
+<head>
+<style>
+body {
+   font-size: 0.85em;
+}
+.list-heading {
+    color: #FF4081;
+}
+a {
+    color: #FF4081;
+}
+</style>
+</head>
+<body>
+<strong>You can view this again in the About screen.</strong>
+<br></br>
+<strong>2.1.3</strong>
+<ul>
+    <li>Fixed Article view appearing transparent for Amoled black theme</li>
+    <li>Search suggestions improvements - reduce flicker, highlight matching query, long tap to edit suggestion</li>
+    <li>Crash fixes</li>
+</ul>
+<strong>2.1.2</strong>
+<ul>
+    <li><b>FIX: </b> Clear text communication error.</li>
+</ul>
+<strong>2.1.1</strong>
+<ul>
+    <li><b>FIX: </b> Open/Search with Lynket option not using selected search engine</li>
+    <li><b>FIX: </b> Aggressive background loading - sometimes tab not minimizing automatically.</li>
+    <li><b>IMPROVED: </b> Use Vibrant palette for placeholder icons</li>
+    <li><b>IMPROVED: </b> Preview tab icons in home screen</li>
+</ul>
+<strong>2.1</strong>
+<h4 class="list-heading">General</h4>
+<ul>
+    <li><b>NEW: Android 10 - Bubbles support!</b> New browsing mode that use Android\'s native bubbles for web multitasking. Requires extra steps to be enabled, please follow this <a href="https://github.com/arunkumar9t2/lynket-browser/wiki/Android-10-Bubbles-Guide">guide</a>.</li>
+    <li><b>NEW: </b> Ability to change default <b>search engine.</b></li>
+    <li><b>NEW: </b> Tabs launcher shortcut (Android 7.1+)</li>
+    <li><b>IMPROVED: </b> Webview provider load performance after getting killed in background</li>
+    <li><b>IMPROVED: </b> If clipboard contains multiple links, extract them and show as individual suggestion items in search bar</li>
+    <li><b>FIX: </b> Menu -> Copy Link does not work/slow sometimes</li>
+    <li><b>FIX: </b> Webview provider bottom bar not respecting toolbar color setting</li>
+    <li><b>NEW: </b> Suggest Kiwi and Vivaldi providers</li>
+    <li><b>NEW: </b> Option to have new line separated list when sharing multiple links</li>
+    <li><b>IMPROVED: </b> Android 10 support</li>
+</ul>
+<h4 class="list-heading">Design</h4>
+<ul>
+    <li><b>NEW: </b> Light weight and simpler app home screen</li>
+    <li><b>IMPROVED: </b> Show search suggestion for history items as grid with favicons</li>
+    <li><b>IMPROVED: </b> New Tab search bar aligned to screen bottom</li>
+</ul>
+<h4 class="list-heading">Performance</h4>
+<ul>
+    <li><b>IMPROVED: </b> Improved custom tabs and app launch performance (reduce jank)</li>
+    <li><b>IMPROVED: </b> Tabs switching performance</li>
+</ul>
+<hr>
+<strong>2.0.2</strong>
+<ul>
+    <li><b>NEW: </b> Custom Minimize Behaviors - Minimize to web heads even if web heads are disabled.</li>
+    <li><b>NEW: </b> New Tab and Tabs shortcuts in Menu > Lynket options</li>
+    <li><b>FIXES: </b> AMP links not loading sometimes.</li>
+    <li><b>FIXES: </b> Website favicons not loading when cache is cleared.</li>
+    <li><b>IMPROVED: </b> Sync translations.</li>
+    <li><b>IMPROVED: </b> Android Pie Support</li>
+    <li><b>IMPROVED: </b> Open keyboard automatically on clicking new tab.</li>
+</ul>
+<hr>
+<strong>2.0.1 - 2nd Anniversary Update!</strong>
+<h4 class="list-heading">Design</h4>
+<ul>
+    <li><b>NEW: </b> Round and Adaptive Icon for Android Oreo</li>
+    <li><b>NEW: </b> New home screen with bottom search bar inspired by Google apps</li>
+    <li><b>NEW: </b> Lynket uses website favicons to calculate toolbar color.</li>
+    <li><b>NEW: </b> Bottom bar now shows text in addition to icons</li>
+    <li><b>NEW: </b> Light nav bar for 8.1</li>
+    <li><b>NEW: </b> Tips screen</li>
+</ul>
+<h4 class="list-heading">Features</h4>
+<ul>
+        <li><b>NEW: <i>TABS!</i></b> See all active tabs opened by Lynket in one screen and quickly switch to them</li>
+        <li><b>NEW: <i>Per App Settings!</i></b> Configure secondary browser and incognito modes based on app.</li>
+        <li><b>NEW: <i>Incognito mode!</i></b> By using system webview as provider.</li>
+        <li><b>NEW: </b> History app shortcuts for 7.1</li>
+        <li><b>NEW: </b> Use custom names while creating home screen shortcuts + Oreo support</li>
+        <li><b>NEW: </b> Minimize does not require web heads to be enabled.</li>
+        <li><b>NEW: </b> Search bar shows suggestions from Clipboard and History</li>
+        <li><b>NEW: </b> Info card in home screen to show active provider</li>
+        <li><b>NEW: </b> New tab dialog shows search suggestions</li>
+        <li><b>NEW: </b> Better tab provider picker. Lynket now recommends supported browsers</li>
+</ul>
+<h4 class="list-heading">Performance</h4>
+<ul>
+        <li><b>IMPROVED: </b> Multitasking performance has been greatly improved. </li>
+        <li><b>IMPROVED: </b> Does not load duplicate tabs </li>
+        <li><b>IMPROVED: </b> Aggressive background loading is smoother</li>
+        <li><b>IMPROVED: </b> 40% smaller APK size</li>
+</ul>
+<h4 class="list-heading">Article mode</h4>
+<ul>
+        <li><b>NEW: </b> AMOLED Black theme</li>
+        <li><b>NEW: </b> Change text size</li>
+        <li><b>NEW: </b> Bottom bar with additional options</li>
+        <li><b>NEW: </b> System bars dim automatically in article mode.</li>
+        <li><b>FIX: </b> Crash when tapping on certain links</li>
+</ul>
+<h4 class="list-heading">AMP Mode</h4>
+<ul>
+        <li><b>NEW: </b> AMP resolver dialog with option to skip.</li>
+</ul>
+<h4 class="list-heading">Others</h4>
+<ul>
+    <li><b>FIX: </b> Lynket not opening links sometimes.</li>
+    <li><b>FIX: </b> Certain languages not rendering correctly in search bar</li>
+    <li><b>FIX: </b> History deletion bug</li>
+    <li><b>FIX: </b> Consistency in dynamic toolbar color</li>
+    <li><b>IMPROVED: </b> Stability of web heads has been improved. Minor UI fixes. Change More menu name to "Lynket Options" for better clarity</li>
+    <li><b>IMPROVED: </b> Sync translations</li>
+</ul>
+<hr>
+<strong>1.7.2</strong>
+<ul>
+    <li><b>NEW: </b> Home screen UI with bottom bar.</li>
+    <li><b>NEW: </b> Circle icon for 7.1+ and supported launchers</li>
+    <li><b>NEW: </b> Overhauled history screen. Option to disable history.</li>
+    <li><b>NEW: </b> Article mode shortcut in bottom bar.</li>
+    <li><b>NEW: </b> AMP indicator in history to show if there is an AMP version available, tapping this would launch the AMP version.</li>
+    <li><b>FIXES: </b> Old website reuse bug, crash fixes, duplicate history entries.</li>
+</ul>
+<hr>
+<strong>1.7</strong>
+<h4 class="list-heading">New browsing modes!</h3>
+<ul>
+    <li><b>Article view! </b> A reader mode which filters all images and ads on a page and displays only the content of the page - Full support with web heads.</li>
+    <li><b>AMP Support! </b> Lynket can now launch the AMP version of the page if it exists for faster loading and better reading experience on mobile.</li>
+    <li>To <b>enable</b>, <i>Settings > Browsing mode > AMP , Article mode.</i> </li>
+</ul>
+<h4 class="list-heading">Design</h3>
+<ul>
+    <li><b>NEW: </b> Major UI over haul and moved settings to its own page with better categorization.</li>
+    <li><b>NEW: </b> Simpler home screen with recently launched links shortcuts.</li>
+</ul>
+<h4 class="list-heading">History</h3>
+<ul>
+    <li><b>NEW: </b>In addition to syncing history with Google account, Lynket now provides its own history option.</li>
+</ul>
+<h4 class="list-heading">Others</h3>
+<ul>
+    <li><b>NEW: </b>Lynket opens the page in web view in case custom tab provider is not found.</li>
+    <li><b>NEW: </b>Menu option under "More" to easily open the current page in article mode.</li>
+    <li><b>NEW: </b>Web head service notification now has actions for creating new tab and managing web heads</li>
+    <li><b>IMPROVED: </b>Web head animations and performance.</li>
+    <li><b>IMPROVED: </b>Aggressive background loading performance.</li>
+    <li><b>IMPROVED: </b>Performance improvements in many areas, related to storage.</li>
+    <li><b>MISC: </b>Removed screen scanning option.</li>
+</ul>
+<hr>
+<strong>1.6.3</strong>
+<ul>
+    <li><b>NEW:</b>Pressing new tab in bottom bar will show a dialog instead of automatically opening the link.</li>
+    <li>Handle crashes when opening links from Facebook</li>
+    <li>Crash fixes.</li>
+    <li>Synced translations</li>
+</ul>
+<hr>
+<strong>1.6.2</strong>
+<ul>
+    <li><b>NEW:</b>Open with menu item. Provides ability to open link in any browser when viewing.</li>
+    <li><b>NEW:</b> <b>7.1+</b> "New tab" launcher shortcut.</li>
+    <li><b>IMPROVED:</b> Rewritten blacklist feature.</li>
+    <li><b>IMPROVED:</b> Better parsing of metadata from websites, thanks to <a href="https://github.com/chimbori/crux">Crux</a>. Dynamic web toolbar color also enhanced.</li>
+    <li><b>IMPROVED:</b> Height of bottom bar is reduced.</li>
+    <li><b>IMPROVED:</b> Overhauled web head context screen.</li>
+    <li><b>IMPROVED:</b> Share all has now has two different modes - multiple and csv. Can share to more apps now.</li>
+    <li><b>FIX:</b> CCT not launching when setting certain apps like Instapaper as favorite share app.</li>
+</ul>
+<hr>
+<strong>1.6.1</strong>
+<a href="https://goo.gl/photos/BzRV69ABov9zJxVu9">  View album</a>
+<ul>
+    <li><b>NEW:</b> <b>Minimize web heads</b> - added a button in bottom bar/menu to minimize current open page back to web head. (Needs merge tabs to work)</li>
+    <li><b>NEW:</b> <b>General share as preferred action</b></li>
+    <li><b>IMPROVED:</b> Web head context screen now syncs better with active web heads.</li>
+    <li><b>IMPROVED:</b> Many performance and crash fixes.</li>
+    <li><b>IMPROVED:</b> Translation updates.</li>
+    <li><b>FIX:</b> Dynamic toolbar issues.</li>
+</ul>
+<hr>
+<strong>1.6</strong>
+<h4 class="list-heading">Web heads</h3>
+<ul>
+    <li><b>NEW:</b> <b>Grouped web heads</b> and much smoother animations.</li>
+    <li><b>NEW:</b> <b>Favicon</b> support for web heads.</li>
+    <li><b>NEW:</b> 5.0+ Aggressive <b>background loading</b> for web heads. Web heads will fully load pages instead of only pre-fetching.</li>
+    <li><b>NEW:</b> Web head <b>badge indicator</b> to show no of active web heads.</li>
+    <li><b>NEW:</b> Web head <b>context menu</b> (accessible by long press) to easily select any web site in group. Provides <b>share all, individual share/close options.</b></li>
+    <li><b>NEW:</b> Web heads if untouched, will hide further away from screen after 6 seconds.</li>
+    <li><b>NEW:</b> Configure web head <b>size</b> (small, normal).</li>
+    <li><b>NEW:</b> 5.0+ Web head now has realistic <b>drop shadow.</b></li>
+    <li><b>NEW:</b> 7.0+ <b>Quick settings tile</b> to toggle web head preference.</li>
+    <li><b>IMPROVED:</b> 5.0+ Opened web sites will not be reloaded again, instead bought to front.</li>
+    <li><b>IMPROVED:</b> Tweaked web head close and reveal animations.</li>
+    <li><b>IMPROVED:</b> Overall performance.</li>
+</ul>
+<h4 class="list-heading">Functional</h3>
+<ul>
+    <li><b>NEW:</b> Search view overhauled to support <b>search suggestions.</b></li>
+    <li><b>NEW:</b> <b>5.0+ Merge tabs and apps</b> Option to open each web site in its own recents entry.</li>
+    <li><b>NEW:</b> <b>Bottom bar</b> Provides extra options like ability to open link in new tab(5.0+) and quick share.</li>
+    <li><b>NEW:</b> Multi language support.</li>
+    <li><b>IMPROVED:</b> Custom tab launching speed.</li>
+    <li><b>IMPROVED:</b> Custom tab share feature.</li>
+    <li><b>IMPROVED:</b> Home screen shortcuts will now have <b>title and icon</b> extracted from the website.</li>
+</ul>
+<h4 class="list-heading">Misc</h3>
+<ul>
+    <li><b>NEW:</b> Overhauled homepage now has simplified <b>tabbed interface.</b></li>
+    <li><b>NEW:</b> Animations > Tab switching, ripple feedback, color change and closing animation in web heads.</li>
+    <li><b>IMPROVED:</b> Many bug fixes and performance improvements.</li>
+</ul>
+<br></br>
+<hr>
+<strong>1.5.5.1</strong>
+<ul>
+    <li><b>NEW:</b> Configure animation speed, choose between medium and short.</li>
+    <li><b>NEW:</b> Ability to turn off Lynket Scanning notification.</li>
+    <li><b>FIX:</b> Open in Chrome not working if Merge Tabs and Apps in Chrome was on.</li>
+    <li><b>FIX:</b> Blacklist FC.</li>
+</ul>
+<hr>
+<strong>1.5.5</strong>
+<ul>
+    <li><b>FIX:</b> Pre-fetching crash fixes for Samsung devices.</li>
+    <li><b>FIX:</b> Crash when enabling dynamic toolbar for < 5.0 devices.</li>
+    <li><b>FIX:</b> Blacklisting issues on Custom Tab enabled apps. Thanks to user - SpaceBison.</li>
+    <li><b>FIX:</b> Springy animation when web heads attach to screen sides.</li>
+    <li><b>FIX:</b> Open in Chrome menu taking to Chrome home screen.</li>
+    <li><b>IMPROVED:</b> Faster custom tab opening animation.</li>
+</ul>
+<hr>
+<strong>1.5.4</strong>
+<ul>
+    <li><b>NEW:</b> Blacklisting: ability to launch your secondary browser instead of Lynket in certain apps.</li>
+    <li><b>NEW:</b> \'X\' will be shown in search bar to quickly clear text while typing.</li>
+    <li><b>NEW:</b> Launching url from main screen now respects web heads preference.</li>
+    <li><b>NEW:</b> Much improved pre-fetch content. Optimized for memory and battery and shows a notification when links are pre-fetched. </li>
+    <li><b>NEW:</b> OneSky translation link in about screen; do help translate Lynket to your language by contributing as a translator.</li>
+    <li><b>FIX:</b> “Open in Lynket” issue. Separate Open in Chrome entry will be shown now.</li>
+    <li><b>IMPROVED:</b> Tablet layout.</li>
+    <li><b>FIX:</b> Janky scrolling in Lynket main screen.</li>
+    <li><b>FIX:</b> Layout issues when font size is increased.</li>
+    <li><b>FIX:</b> Secondary browser opening link twice.</li>
+    <li><b>FIX:</b> Major optimizations and memory leak fixes.</li>
+</ul>
+<hr>
+<strong>1.5.3</strong>
+<ul>
+    <li><b>FIX:</b> Lynket not shown in recents on some devices.</li>
+    <li><b>FIX:</b> Crashes and minor bugs.</li>
+</ul>
+<hr>
+<strong>1.5.2</strong>
+<ul>
+    <li><b>NEW:</b> Option to join beta program. Please join if you would like to contribute to Lynket\'s development.</li>
+    <li><b>IMPROVED:</b> Minor improvements to web heads snapping to trash and webhead physics.</li>
+    <li><b>FIX:</b> Lynket getting disappeared from recents view.</li>
+    <li><b>FIX:</b> Open in Lynket is shown in Chrome beta and dev versions. Now a separate Open in Chrome will be shown.</li>
+    <li><b>FIX:</b> Crashes and minor bugs.</li>
+</ul>
+<hr>
+<strong>1.5.1</strong>
+<ul>
+    <li><b>NEW:</b> Ability to choose color of web heads.</li>
+    <li><b>NEW:</b> Ability to close all webheads from notification bar.</li>
+    <li><b>IMPROVED:</b> Webheads dragging. Webheads now snap to trash when near.</li>
+    <li><b>IMPROVED:</b> Scrolling behaviour in Lynket settings screen.</li>
+    <li><b>FIX:</b> Not able to perform search on some keyboards. Now <b>search icon</b> will be shown on your keyboard, press that to launch URL or search.</li>
+    <li><b>FIX:</b> Crash when trying to install Chrome from dialog.</li>
+    <li><b>FIX:</b> Multiple crashes related to webheads.</li>
+    <li><b>FIX:</b> Lynket settings appearing randomly when closing custom tabs.</li>
+    <li><b>FIX:</b> For 6.0+, re ask permission to draw on other apps if it was revoked with webheads turned on.</li>
+</ul>
+<hr>
+<strong>1.5</strong>
+<ul>
+    <li><b>NEW: WEBHEADS -</b> Ability to stack multiple links in floating bubbles and open them later. See the separate Intro in main screen.</li>
+    <li><b>NEW:</b> Configurable action item in custom tab. Choose between secondary browser and any sharing app. <b>Example:</b> Choose <b>Pocket</b> to instantly save the link.</li>
+    <li><b>NEW:</b> Ability to do text and voice search from main screen with the new material design search bar.</li>
+    <li><b>NEW:</b> Dynamic toolbar enhanced. Now can adapt color based on the launching app\'s color.</li>
+    <li><b>NEW:</b> Launch screen, new icon and app intro.</li>
+    <li><b>IMPROVED:</b> Better app pickers</li>
+    <li><b>IMPROVED:</b> Sharing a non url text to Lynket will now do a Google search. Also in text selection pop up in 6.0</li>
+    <li><b>IMPROVED:</b> Setting default behaviour on Cyanogen devices</li>
+    <li><b>IMPROVED:</b> Improved warm up and pre-fetch performance on non Chrome browsers</li>
+    <li><b>IMPROVED:</b> Reduced memory consumptions and general crash fixes</li>
+    <li><b>IMPROVED:</b> UI layout changes</li>
+</ul>
+<hr>
+<strong>1.4.1</strong>
+<ul>
+    <li>Rewritten affected code to avoid potential license violations.</li>
+</ul>
+<hr>
+<strong>1.4</strong>
+<ul>
+    <li><b>NEW:</b> Pre fetching. Lynket can scan links on screen and pre load them in background for you.</li>
+    <li><b>NEW:</b> Option to keep browser warmed up. Improves launch times!</li>
+    <li><b>NEW:</b> Dynamic toolbar color. Lynket can provide color based on the website, if the website has it.</li>
+    <li><b>NEW:</b> Secondary browser option. Quickly get to your preferred app.</li>
+    <li><b>NEW:</b> Add to home screen option.</li>
+    <li><b>IMPROVED:</b> More material design</li>
+    <li><b>IMPROVED:</b> Better setting default behaviour.</li>
+    <li><b>IMPROVED:</b> Copy and share actions now target the current open page instead of first open page.</li>
+</ul>
+<hr>
+<strong>1.3</strong>
+<ul>
+   <li><b>DONATE option.</b> Please donate if you like this app and to support development:)</li>
+   <li>Share links to open in Lynket</li>
+   <li>For 6.0, select a text link to open in Lynket</li>
+   <li>Option to choose between multiple Chrome versions</li>
+   <li>About screen</li>
+   <li>Link to Lynket G+ community</li>
+   <li>Changelog screen</li>
+   <li>Link to Chrome in case no custom tab provider is found</li>
+</ul>
+<hr>
+<strong>1.2.1</strong>
+<ul>
+   <li>Reworked share menu. Direct share enabled for 6.0</li>
+</ul>
+<hr>
+<strong>1.2</strong>
+<ul>
+   <li>Change Toolbar color to your liking.</li>
+   <li>Configure animations.</li>
+   <li>Link to read about chrome custom tabs.</li>
+   <li>Option to share Lynket link to others.</li>
+   <li>Licenses dialog.</li>
+   <li>Tutorial flow performance fixes.</li>
+   <li>Icons and imagery updated.</li>
+</ul>
+<hr>
+<strong>1.1</strong>
+<ul>
+   <li>Much requested copy and share options</li>
+</ul>
+<hr>
+<strong>1.0</strong>
+<ul>
+   <li>Initial release.</li>
+</ul>
+</body>
+</html>
+]]></string>
+</resources>
