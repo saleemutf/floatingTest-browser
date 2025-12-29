@@ -13,6 +13,8 @@ whetstone = "0.6.0"
 dagger = "2.50"
 molecule = "1.3.1"
 coil = "2.6.0"
+ktlint = "0.50.0"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -41,6 +43,7 @@ spotless = { module = "com.diffplug.spotless:spotless-plugin-gradle", version = 
 dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version = "1.9.10" }
 nexus-publish = { module = "io.github.gradle-nexus:publish-plugin", version = "1.3.0" }
 kotlinx-binaryvalidator = { module = "org.jetbrains.kotlinx:binary-compatibility-validator", version = "0.14.0" }
+
 
 
 [plugins]
