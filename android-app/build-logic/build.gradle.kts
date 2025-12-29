@@ -55,12 +55,12 @@ gradlePlugin {
 }
 
 dependencies {
-  implementation(deps.gradle.dependency.updates)
-  implementation(deps.agp)
-  implementation(deps.kotlin)
-  implementation(deps.spotless)
-  implementation(deps.dokka)
-  implementation(deps.nexus.publish)
-  implementation(deps.kotlinx.binaryvalidator)
+  implementation(libs.gradle.dependency.updates)
+  implementation(libs.agp)
+  implementation(libs.kotlin)
+  implementation(libs.spotless)
+  implementation(libs.dokka)
+  implementation(libs.nexus.publish)
+  implementation(libs.kotlinx.binaryvalidator)
   implementation("gradle.plugin.dev.arunkumar:scabbard-gradle-plugin:0.5.0")
 }
