@@ -48,4 +48,3 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 whetstone = { id = "com.deliveryhero.whetstone", version.ref = "whetstone" }
-
