@@ -42,7 +42,7 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.flipboard.bottomsheet.BottomSheetLayout;
+// import com.flipboard.bottomsheet.BottomSheetLayout;
 import com.google.android.material.snackbar.Snackbar;
 import com.mikepenz.community_material_typeface_library.CommunityMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
@@ -81,8 +81,8 @@ public class BrowsingOptionsActivity extends BaseActivity implements Snackable, 
   AppPreferenceCardView browserPreferenceView;
   @BindView(R.id.favshare_preference_view)
   AppPreferenceCardView favSharePreferenceView;
-  @BindView(R.id.bottomsheet)
-  BottomSheetLayout bottomSheetLayout;
+  /* @BindView(R.id.bottomsheet)
+  BottomSheetLayout bottomSheetLayout; */
   @BindView(R.id.error)
   TextView error;
   @Inject
@@ -146,7 +146,7 @@ public class BrowsingOptionsActivity extends BaseActivity implements Snackable, 
         WEB_INTENT,
         R.string.choose_secondary_browser,
         activityInfo -> {
-          bottomSheetLayout.dismissSheet();
+          // bottomSheetLayout.dismissSheet();
           browserPreferenceView.updatePreference(activityInfo.componentName);
           snack(String.format(getString(R.string.secondary_browser_success), activityInfo.label));
         });
@@ -157,7 +157,7 @@ public class BrowsingOptionsActivity extends BaseActivity implements Snackable, 
         TEXT_SHARE_INTENT,
         R.string.choose_fav_share_app,
         activityInfo -> {
-          bottomSheetLayout.dismissSheet();
+          // bottomSheetLayout.dismissSheet();
           favSharePreferenceView.updatePreference(activityInfo.componentName);
           snack(String.format(getString(R.string.fav_share_success), activityInfo.label));
         });
@@ -178,7 +178,7 @@ public class BrowsingOptionsActivity extends BaseActivity implements Snackable, 
   }
 
   private void showPicker(final IntentPickerSheetView browserPicker) {
-    new Handler().postDelayed(() -> bottomSheetLayout.showWithSheetView(browserPicker), 150);
+    // new Handler().postDelayed(() -> bottomSheetLayout.showWithSheetView(browserPicker), 150);
   }
 
   @Override

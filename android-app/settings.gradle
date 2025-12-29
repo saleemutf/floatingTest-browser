@@ -35,7 +35,6 @@ pluginManagement {
     id "com.gradle.enterprise" version "3.6.3"
     id "com.android.application" version "8.2.2"
     id "org.jetbrains.kotlin.android" version "1.9.22"
-    id "scabbard.gradle" version "0.5.0"
   }
 }
 
@@ -47,8 +46,7 @@ dependencyResolutionManagement {
     maven { url "https://jitpack.io" }
     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
-    maven { url "https://maven.google.com" }
-    jcenter()
+    jcenter() 
   }
 }
 

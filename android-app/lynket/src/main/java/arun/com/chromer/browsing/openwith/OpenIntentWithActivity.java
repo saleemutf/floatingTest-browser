@@ -30,7 +30,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.flipboard.bottomsheet.BottomSheetLayout;
+// import com.flipboard.bottomsheet.BottomSheetLayout;
 
 import arun.com.chromer.R;
 import arun.com.chromer.shared.views.IntentPickerSheetView;
@@ -40,8 +40,8 @@ import butterknife.ButterKnife;
 
 public class OpenIntentWithActivity extends AppCompatActivity {
 
-  @BindView(R.id.bottomsheet)
-  BottomSheetLayout bottomSheet;
+  /* @BindView(R.id.bottomsheet)
+  BottomSheetLayout bottomSheet; */
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -49,11 +49,13 @@ public class OpenIntentWithActivity extends AppCompatActivity {
     setContentView(R.layout.activity_open_with);
     ButterKnife.bind(this);
 
-    bottomSheet.addOnSheetDismissedListener(bottomSheetLayout -> finish());
+    // bottomSheet.addOnSheetDismissedListener(bottomSheetLayout -> finish());
 
     if (getIntent() != null && getIntent().getDataString() != null) {
       final Intent webSiteIntent = new Intent(ACTION_VIEW, getIntent().getData());
-      final IntentPickerSheetView browserPicker = new IntentPickerSheetView(this,
+      startActivity(Intent.createChooser(webSiteIntent, getString(R.string.open_with)));
+      finish();
+      /* final IntentPickerSheetView browserPicker = new IntentPickerSheetView(this,
         webSiteIntent,
         R.string.open_with,
         activityInfo -> {
@@ -64,7 +66,7 @@ public class OpenIntentWithActivity extends AppCompatActivity {
           finish();
         });
       browserPicker.setFilter(IntentPickerSheetView.selfPackageExcludeFilter(this));
-      bottomSheet.showWithSheetView(browserPicker);
+      bottomSheet.showWithSheetView(browserPicker); */
     } else {
       invalidLink();
       finish();
