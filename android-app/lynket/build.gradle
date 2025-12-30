@@ -109,7 +109,7 @@ dependencies {
   kapt "androidx.lifecycle:lifecycle-common-java8:2.0.0"
 
   // Intro
-  implementation "com.github.apl-devs:appintro:v4.2.3"
+  implementation "com.github.apl-devs:AppIntro:v4.2.3"
 
   // Icons
   implementation "com.mikepenz:community-material-typeface:2.0.46.1@aar"
@@ -137,7 +137,7 @@ dependencies {
 
   // Badge
   implementation "com.github.nekocode:Badge:1.2"
-  implementation "com.github.duanhong169:drawabletoolbox:1.0.7"
+  implementation "com.github.duanhong169:DrawableToolbox:1.0.7"
 
   // Reactive
   implementation "io.reactivex:rxjava:1.3.8"

@@ -29,6 +29,7 @@ pluginManagement {
     }
     gradlePluginPortal()
     mavenCentral()
+    maven { url "https://jitpack.io" }
   }
   plugins {
     // TODO Replace with version catalogs once plugins are supported ready
@@ -39,14 +40,14 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
   repositories {
+    mavenLocal()
+    maven { url "https://jitpack.io" }
     google()
     mavenCentral()
-    maven { url "https://jitpack.io" }
     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
-    jcenter() 
   }
 }
 
